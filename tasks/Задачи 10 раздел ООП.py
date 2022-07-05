@@ -550,55 +550,6 @@
 #   pass
 
 
-# 10 - class Dice: ---------------- ne reshena
-from random import randint
-
-
-class Dice:
-    def __init__(self):
-        self.history = []
-
-    def dice_throw(self):
-
-        return randint(1, 121)
-
-    def get_history(self, x=4):
-        if len(self.history) > 5:
-            return self.history[-x:]
-        return self.history
-
-
-dice_4 = Dice()
-dice_4.history.append(dice_4.dice_throw())
-print(dice_4.dice_throw())
-print(dice_4.get_history())
-
-
-# 11 - Повышение уровня
-# class Hero:
-#
-#     def __init__(self, name, health=100, experience=0, level=1):
-#         self.name = name
-#         self.health = health
-#         self.experience = experience
-#         self.level = level
-#
-#     def add_experience(self):
-#         """добавляет опыт, при этом уровень и здоровье пересчитываются."""
-#         return
-#
-#     def get_level(self):
-#         """возвращает опыт, это целое число."""
-#         self.level += 1
-#
-#     def get_health(self) -> int:
-#         """возвращает здоровье, это целое число."""
-#         return (10 - self.health % 10) + self.health
-#
-#
-# hero = Hero('Jeka')
-
-
 
 
 
